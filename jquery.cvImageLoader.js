@@ -5,6 +5,13 @@
  * @url			https://github.com/TheT0dd/cvImageLoader/blob/master/jquery.cvImageLoader.js
  * @licence		CC BY (http://creativecommons.org/licenses/by/3.0/)
  * 
+ * 
+ * 
+ * @param		graceful	: [default:true] if true, will gracefully display images inside the container as they are loaded
+ * @param		showDelay	: [default:900] if graceful==true, this determines the duration of the fade in animation
+ * @param		filter		: [default:false] if filter!=false, it functions as a jquery selector filter
+ * @param		ready		: [default:null] the callback function to be called by the plugin when all images are loaded
+ * @param		clever		: [default:true] if true, will ignore elements whose background images have been already marked as loaded. (useful when appending new elements w/ bg images inside a container)
  */
 
 (function($, undefined) {
